@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        *{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulario</h1>
+    <form action="Cadastro.php" method="Post" autocomplete="off">
+        <p><label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+    <!--
+    action - é usado pra dizer qual é o destino da informação enviada pelo botão submit
+    name - é usado pra enviar informações para alguma linguagem de programação
+    id - é usado pra enviar informações pra Javascript
+    label - a tag label serve pra conectar a palavra com a caixa de texto!!(é muuito importante usar sempre)
+    -->
+    <!--
+    method="get" quando se utiliza isso as informações ficam na url
+        usar get quando os dados não são privadas
+        para poder compartilhar sites
+    mtethod="post" quando se usa isso as informações não ficam na url
+        usar post pra dados privados
+        se tiver mais de 3.000 bytes
+    -->
+</body>
+</html>
